@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="container" style="width:40%">
+    @using (Html.BeginForm("SaveRecord", "Home", FormMethod.Post))
+    {
+        @Html.TextBox("txtWord", "Enter Your Name");<br />
+        <input type="submit" value="submit" />
+    }
+
+    @ViewBag.result
+
+</div>
